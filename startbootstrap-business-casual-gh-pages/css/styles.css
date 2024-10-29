@@ -8796,6 +8796,18 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
+.footer {
+  background-color: #188754;
+
+}
+
+.btn-primary{
+background-color: #2dfb64;
+}
+.btn-primary:hover{
+  background-color: #188754 
+}
+
 @media (min-width: 768px) {
   .float-md-start {
     float: left !important;
