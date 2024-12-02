@@ -8140,7 +8140,7 @@ textarea.form-control-lg {
 .bg-success {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
-  height: 90px;
+ 
 }
 
 .bg-info {
