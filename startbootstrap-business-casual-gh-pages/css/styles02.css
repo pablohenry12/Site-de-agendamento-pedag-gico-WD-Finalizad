@@ -12,11 +12,13 @@ h1 {
 .navbar {
     font-size: 1.1rem;
 }
-.logoifba{
+.logoifba {
     border-radius: 20px;
     margin-right: 50px;
-    width: 95px;
+    width: 25%;
+    
 }
+
 .logoifba:hover{
     transform: scale(1.1);
 }

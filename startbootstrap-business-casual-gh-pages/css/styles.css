@@ -600,7 +600,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
 }
 
@@ -6669,6 +6669,7 @@ textarea.form-control-lg {
 .text-bg-success {
   color: #fff !important;
   background-color: RGBA(25, 135, 84, var(--bs-bg-opacity, 1)) !important;
+  
 }
 
 .text-bg-info {
@@ -8139,6 +8140,7 @@ textarea.form-control-lg {
 .bg-success {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+  height: 90px;
 }
 
 .bg-info {
@@ -10909,10 +10911,12 @@ p {
 }
 #mainNav .navbar-brand {
   color: #e6a756;
+ 
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 800;
+
 }
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: #e6a756;
