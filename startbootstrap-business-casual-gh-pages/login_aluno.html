@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,16 +27,19 @@
             border: none;
         }
 
-        .btn-success:hover {
+        .btn-success, .back-button :hover {
             background-color: #218838;
+        }
+        .back-button {
+            background-color: #28a745;
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="back-button">
-        <a href="index.html" class="btn btn-secondary">Voltar</a>
-    </div>
     <div class="container">
         <div class="form-container">
             <h3 class="text-center mb-4">Login Aluno</h3>
