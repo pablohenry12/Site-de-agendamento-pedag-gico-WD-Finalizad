@@ -20,7 +20,7 @@
     <!-- Cabeçalho -->
     <header class="bg-success py-5">
         <div class="container text-center text-white">
-            <h1>Agendamento Pedagógico IFBA</h1>
+            <h1><strong>Agendamento Pedagógico IFBA</strong></h1>
         </div>
         <div class="container">
             <a href="https://portal.ifba.edu.br/jacobina" target="_blank">
