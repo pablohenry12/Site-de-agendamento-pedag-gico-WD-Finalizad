@@ -43,8 +43,8 @@
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#opcoes">Opções</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login_aluno.html"> Login Aluno</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html"> Login Pedagoga </a></li>
+                    <li class="nav-item"><a class="nav-link" href="login_aluno.php"> Login Aluno</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.php"> Login Pedagoga </a></li>
                 </ul>
             </div>
     </nav>
@@ -125,8 +125,8 @@
     <section id="opcoes" class="bg-light py-5 text-center">
         <div class="container">
             <h2>Escolha uma das opções abaixo</h2>
-            <a href="login_aluno.html" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
-            <a href="login.html" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
+            <a href="login_aluno.php" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
+            <a href="login.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
         </div>
     </section>
 
