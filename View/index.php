@@ -13,6 +13,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles02.css">
+    <style>
+        .tlt-index{
+            color: white;
+        }
+    </style>
     
 </head>
 
@@ -20,7 +25,7 @@
     <!-- Cabeçalho -->
     <header class="bg-success py-5">
         <div class="container text-center text-white">
-            <h1><strong>Agendamento Pedagógico IFBA</strong></h1>
+            <h1 class="tlt-index"><strong>Agendamento Pedagógico IFBA</strong></h1>
         </div>
         <div class="container">
             <a href="https://portal.ifba.edu.br/jacobina" target="_blank">
@@ -30,7 +35,6 @@
 
     <!-- Navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
-            <a class="navbar-brand" href="#">Início</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -121,8 +125,8 @@
     <section id="opcoes" class="bg-light py-5 text-center">
         <div class="container">
             <h2>Escolha uma das opções abaixo</h2>
-            <a href="login_aluno.html" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
-            <a href="login.html" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
+            <a href="login_aluno.php" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
+            <a href="login.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
         </div>
     </section>
 
