@@ -39,8 +39,8 @@
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#opcoes">Opções</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login_aluno.html"> Login Aluno</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html"> Login Pedagoga </a></li>
+                    <li class="nav-item"><a class="nav-link" href="login_aluno.php"> Login Aluno</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.php"> Login Pedagoga </a></li>
                 </ul>
             </div>
     </nav>
