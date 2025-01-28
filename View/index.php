@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/styles02.css">
     <style>
         .tlt-index{
-            color: aliceblue;
+            color: white;
         }
     </style>
     
