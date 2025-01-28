@@ -45,7 +45,7 @@
                 </div>
                 <button type="submit" class="btn btn-success w-100"><a href="agendamento.php">Entrar</a></button>
                 <div class="mt-3 text-center">
-                    <p class="small">Não possui conta? <a href="cadast_aluno.php" class="text-success">Cadastre-se</a></p>
+                    <p class="small">Não possui conta? <a href="cadast_aluno.php" class="btn btn-success w-100">Cadastre-se</a></p>
                 </div>
             </form>
         </div>
