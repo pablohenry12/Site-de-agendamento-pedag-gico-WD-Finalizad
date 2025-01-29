@@ -2,7 +2,7 @@
 session_start();
 
 // Conexão com o banco de dados
-$conn = new mysqli('localhost', 'root', '', 'sistema_agendamento');
+$conn = new mysqli('localhost', 'root', '@Phfj2005', 'sistema_agendamento');
 
 // Verifica se houve erro na conexão
 if ($conn->connect_error) {
