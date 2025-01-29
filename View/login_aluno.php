@@ -31,7 +31,7 @@
 
 <body>
     <div class="back-button">
-        <a href="index.html" class="btn btn-secondary">Voltar</a> 
+        <a href="index.php" class="btn btn-secondary">Voltar</a> 
     <div class="container">
         <div class="form-container">
             <h3 class="text-center mb-4">Login Aluno</h3>
@@ -43,9 +43,9 @@
                     <label for="password" class="form-label">Senha</label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
                 </div>
-                <button type="submit" class="btn btn-success w-100"><a href="agendamento.html">Entrar</a></button>
+                <button type="submit" class="btn btn-success w-100"><a href="agendamento.php">Entrar</a></button>
                 <div class="mt-3 text-center">
-                    <p class="small">Não possui conta? <a href="cadast_aluno.html" class="text-success">Cadastre-se</a></p>
+                    <p class="small">Não possui conta? <a href="cadast_aluno.php" class="btn btn-success w-100">Cadastre-se</a></p>
                 </div>
             </form>
         </div>
