@@ -12,8 +12,9 @@ CREATE TABLE Pedagoga (
 CREATE TABLE Aluno (
     matricula INT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
+    telefone VARCHAR(15),
     senha VARCHAR(20) NOT NULL,
-    telefone VARCHAR(15)
+    
 );
 
 -- Tabela Atende
