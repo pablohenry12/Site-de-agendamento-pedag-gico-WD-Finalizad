@@ -646,11 +646,13 @@ progress {
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
+    color: black;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+    background-color: black;
   }
 }
 @media (min-width: 992px) {
@@ -11039,6 +11041,7 @@ p {
   .list-hours {
     width: 50%;
     font-size: 1.1rem;
+    color: black;
   }
 }
 
