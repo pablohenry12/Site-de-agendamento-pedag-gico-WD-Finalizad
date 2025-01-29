@@ -28,3 +28,6 @@ CREATE TABLE Atende (
     FOREIGN KEY (siape_pedagoga) REFERENCES Pedagoga(siape),
     FOREIGN KEY (matricula_aluno) REFERENCES Aluno(matricula)
 );
+
+
+INSERT INTO Pedagoga (id, nome, senha) VALUES (123456, 'Maria Clara', '123456');
