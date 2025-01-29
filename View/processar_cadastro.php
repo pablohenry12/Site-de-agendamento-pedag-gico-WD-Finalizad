@@ -3,8 +3,6 @@ session_start();
 
 // Conexão com o banco de dados
 $conn = new mysqli('localhost', 'root', '', 'sistema_agendamento');
-
-// Verifica se houve erro na conexão
 if ($conn->connect_error) {
     die("Erro na conexão com o banco de dados: " . $conn->connect_error);
 }

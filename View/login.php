@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,17 +41,17 @@
     <div class="container">
         <div class="form-container">
             <h3 class="text-center mb-4">Acesso Administrativo</h3>
-            <form action="admin.php" method="POST">
-                <div class="mb-3">
-                    <label for="username" class="form-label">Usuário</label>
-                    <input type="text" class="form-control" id="username" name="username" placeholder="Seu usuário" required>
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Sua senha" required>
-                </div>
-                <button type="submit" class="btn btn-success w-100"><a href="admin.php">Entrar</a></button>
-            </form>
+            <form action="login_admin.php" method="POST">
+    <div class="mb-3">
+        <label for="username" class="form-label">Usuário</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Seu usuário" required>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Sua senha" required>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Entrar</button>
+</form>
         </div>
     </div>
 
