@@ -32,9 +32,51 @@
 <body>
     <div class="back-button">
         <a href="index.php" class="btn btn-secondary">Voltar</a> 
+    </div>
     <div class="container">
         <div class="form-container">
             <h3 class="text-center mb-4">Login Aluno</h3>
+            <?php
+            session_start();
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                // Conexão com o banco de dados
+                $conn = new mysqli('localhost', 'root', '', 'sistema_agendamento');
+
+                if ($conn->connect_error) {
+                    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
+                }
+
+                // Obter os dados do formulário
+                $email = $_POST['email'];
+                $senha = $_POST['password'];
+
+                // Consultar o banco de dados
+                $stmt = $conn->prepare("SELECT * FROM alunos WHERE email = ?");
+                $stmt->bind_param("s", $email);
+                $stmt->execute();
+                $result = $stmt->get_result();
+
+                if ($result->num_rows > 0) {
+                    $user = $result->fetch_assoc();
+                    
+                    // Verificar senha
+                    if (password_verify($senha, $user['senha'])) {
+                        $_SESSION['user_id'] = $user['id'];
+                        $_SESSION['user_email'] = $user['email'];
+                        header("Location: agendamento.php");
+                        exit;
+                    } else {
+                        echo '<div class="alert alert-danger">Senha incorreta.</div>';
+                    }
+                } else {
+                    echo '<div class="alert alert-danger">E-mail não encontrado.</div>';
+                }
+
+                $stmt->close();
+                $conn->close();
+            }
+            ?>
+            <form method="POST" action="">
                 <div class="mb-3">
                     <label for="email" class="form-label">E-mail</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
@@ -43,11 +85,11 @@
                     <label for="password" class="form-label">Senha</label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
                 </div>
-                <button type="submit" class="btn btn-success w-100"><a href="agendamento.php">Entrar</a></button>
-                <div class="mt-3 text-center">
-                    <p class="small">Não possui conta? <a href="cadast_aluno.php" class="btn btn-success w-100">Cadastre-se</a></p>
-                </div>
+                <button type="submit" class="btn btn-success w-100">Entrar</button>
             </form>
+            <div class="mt-3 text-center">
+                <p class="small">Não possui conta? <a href="cadast_aluno.php">Cadastre-se</a></p>
+            </div>
         </div>
     </div>
 
