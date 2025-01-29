@@ -168,7 +168,6 @@
             <p class="m-0">Agendamento Pedagógico &copy; 2024 - Desenvolvido por Pablo Henrique</p>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

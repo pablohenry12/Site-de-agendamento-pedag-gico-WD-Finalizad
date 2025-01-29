@@ -2,7 +2,7 @@
 session_start();
 
 // Conexão com o banco de dados
-$conn = new mysqli('localhost:3306', 'root', '2025', 'sistema_agendamento');
+$conn = new mysqli('localhost', 'root', '', 'sistema_agendamento');
 
 // Verifica se houve erro na conexão
 if ($conn->connect_error) {
@@ -15,10 +15,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $matricula = trim($_POST["matricula"]); // Matricula ao invés de email
     $telefone = trim($_POST["telefone"]);
     $senha = $_POST["senha"];
-    $confirmarSenha = $_POST["confirmarSenha"];
+    $confirmar_senha = $_POST["confirmar_senha"];
+
+    $sql = "INSERT INTO aluno (matricula, nome, telefone, senha, confirmar_senha) VALUES ('{matricula}', '{nome}', '{telefone}', '{senha}', ''{confirmar_senha})";
 
     // Verifica se a matrícula já existe
-    $stmt = $conn->prepare("SELECT matricula FROM Aluno WHERE matricula = ?");
+    $stmt = $conn->prepare("SELECT matricula FROM aluno WHERE matricula = ?");
     $stmt->bind_param("i", $matricula);
     $stmt->execute();
     $stmt->store_result();
@@ -39,8 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
     // Inserção no banco de dados
-    $stmt = $conn->prepare("INSERT INTO Aluno (matricula, nome, senha, telefone) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("isss", $matricula, $nome, $senhaHash, $telefone);
+    $stmt = $conn->prepare("INSERT INTO aluno (matricula, nome, telefone, senha) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("isss", $matricula, $nome, $telefone, $senhaHash);
 
     if ($stmt->execute()) {
         echo "<script>alert('Cadastro realizado com sucesso!'); window.location.href='login_aluno.php';</script>";

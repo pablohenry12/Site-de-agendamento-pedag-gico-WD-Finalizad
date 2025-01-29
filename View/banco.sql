@@ -3,28 +3,28 @@ USE sistema_agendamento;
 
 -- Tabela Pedagoga
 CREATE TABLE Pedagoga (
-    siape INT PRIMARY KEY,
+    siape VARCHAR(20) PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    senha VARCHAR(20) NOT NULL
+    senha VARCHAR(35) NOT NULL
 );
 
 -- Tabela Aluno
 CREATE TABLE Aluno (
-    matricula INT PRIMARY KEY,
+    matricula VARCHAR(20) PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    telefone VARCHAR(15),
-    senha VARCHAR(20) NOT NULL,
+    telefone VARCHAR(20),
+    senha VARCHAR(30) NOT NULL,
     
 );
 
 -- Tabela Atende
-CREATE TABLE Atende (
+CREATE TABLE Atendimento (
     data DATE NOT NULL,
     hora TIME NOT NULL,
-    turma VARCHAR(5),
+    turma VARCHAR(10),
     descricao TEXT,
-    siape_pedagoga INT NOT NULL,
-    matricula_aluno INT NOT NULL,
+    siape_pedagoga VARCHAR(20) PRIMARY KEY,
+    matricula_aluno VARCHAR(20) PRIMARY KEY,
     FOREIGN KEY (siape_pedagoga) REFERENCES Pedagoga(siape),
     FOREIGN KEY (matricula_aluno) REFERENCES Aluno(matricula)
 );
