@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST['password'];
 
    
-    $stmt = $conn->prepare("SELECT * FROM Pedagoga WHERE siape = ? AND senha = ?");
+    $stmt = $conn->prepare("SELECT * FROM pedagoga WHERE siape = ? AND senha = ?");
     $stmt->bind_param("is", $siape, $senha);
     $stmt->execute();
     $result = $stmt->get_result();

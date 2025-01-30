@@ -49,14 +49,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $matricula = trim($_POST['matricula']);
-    $senha = $_POST['password'];
+    $senha = trim($_POST['password']);
 
-    $verf = $conn->prepare("SELECT matricula, senha FROM Aluno WHERE matricula = ?");
+    $verf = $conn->prepare("SELECT matricula, senha FROM aluno WHERE matricula = ?");
     
     if (!$verf) {
         die("Erro na preparação da consulta: " . $conn->error);
     }
-
+    
     $verf->bind_param("s", $matricula);
     $verf->execute();
     $result = $verf->get_result();
