@@ -129,7 +129,9 @@
             <a href="login.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
         </div>
     </section>
-
+    <div class='justify-center'>
+      <hr>
+    </div>
     <!-- Contato -->
     <section id="contato" class="bg-light py-5">
         <div class="container text-center">
