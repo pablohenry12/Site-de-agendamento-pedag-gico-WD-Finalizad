@@ -7,15 +7,19 @@ if ($conn->connect_error) {
     die("Erro na conexão com o banco de dados: " . $conn->connect_error);
 }
 
-// Verifica se os dados foram enviados
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = trim($_POST["nome"]);
     $matricula = trim($_POST["matricula"]); 
     $telefone = trim($_POST["telefone"]);
     $senha = $_POST["senha"];
+<<<<<<< HEAD
     $confirmar_senha = $_POST["confirmarSenha"]; 
+=======
+    $confirmar_senha = $_POST["confirmarSenha"];
+>>>>>>> c9740348d4413b85736465a6ffe96c321b689c04
 
-    // Verifica se a matrícula já existe
+    
     $verf = $conn->prepare("SELECT matricula FROM aluno WHERE matricula = ?");
     $verf->bind_param("s", $matricula); 
     $verf->execute();
@@ -27,15 +31,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     $verf->close();
 
-    // Verifica se as senhas coincidem
+    
     if ($senha !== $confirmar_senha) {
         echo "<script>alert('As senhas não coincidem!'); window.location.href='cadast_aluno.php';</script>";
         exit;
     }
 
-    // Insere os dados no banco
+    
+    $senhaCriptografada = password_hash($senha, PASSWORD_DEFAULT);
+
+   
     $verf = $conn->prepare("INSERT INTO aluno (matricula, nome, telefone, senha) VALUES (?, ?, ?, ?)");
-    $verf->bind_param("ssss", $matricula, $nome, $telefone, $senha);
+    $verf->bind_param("ssss", $matricula, $nome, $telefone, $senhaCriptografada);
 
     if ($verf->execute()) {
         echo "<script>alert('Cadastro realizado com sucesso!'); window.location.href='login_aluno.php';</script>";
