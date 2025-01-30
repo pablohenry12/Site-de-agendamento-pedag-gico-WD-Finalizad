@@ -13,11 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $matricula = trim($_POST["matricula"]); 
     $telefone = trim($_POST["telefone"]);
     $senha = $_POST["senha"];
-    $confirmar_senha = $_POST["confirmarSenha"]; // Corrigido para o mesmo nome do input HTML
+    $confirmar_senha = $_POST["confirmarSenha"]; 
 
     // Verifica se a matrícula já existe
     $verf = $conn->prepare("SELECT matricula FROM aluno WHERE matricula = ?");
-    $verf->bind_param("s", $matricula); // Mudança de "i" para "s" (caso tenha letras)
+    $verf->bind_param("s", $matricula); 
     $verf->execute();
     $verf->store_result();
 
