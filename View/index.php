@@ -141,12 +141,12 @@
                 <div class="col-md-4">
                     <img src="assets/img/Pablo.jpg" class="img-fluid rounded-circle mt-4" alt="Foto de Pablo Henrique">
                     <h4 class="mt-3">Pablo Henrique</h4>
-                    <p>Estudante do IFBA campus Jacobina, Pablo criou este sistema para facilitar a gestão pedagógica e aprimorar a comunicação no ambiente educacional.</p>
+                    <p>Estudante do IFBA campus Jacobina, Pablo criou este sistema para melhorar a gestão pedagógica e aprimorar a comunicação no ambiente educacional.</p>
                 </div>
                 <div class="col-md-4">
                     <img src="assets/img/foto-kari.webp" class="img-fluid rounded-circle mt-4" alt="Foto de Kariely">
                     <h4 class="mt-3">Kariely</h4>
-                    <p>Estudante do IFBA campus Jacobina, Kariely criou este sistema para facilitar a gestão pedagógica e aprimorar a comunicação no ambiente educacional.</p>
+                    <p>Estudante do IFBA campus Jacobina, Kariely criou este sistema para melhorar a gestão pedagógica e aprimorar a comunicação no ambiente educacional.</p>
                 </div>
             </div>
         </div>

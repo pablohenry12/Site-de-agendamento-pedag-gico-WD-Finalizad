@@ -7,10 +7,10 @@ if ($conn->connect_error) {
     die("Erro na conexão com o banco de dados: " . $conn->connect_error);
 }
 
-// Verifica se os dados foram enviados via POST
+// Verifica se os dados foram enviados
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = trim($_POST["nome"]);
-    $matricula = trim($_POST["matricula"]); // Matricula ao invés de email
+    $matricula = trim($_POST["matricula"]); 
     $telefone = trim($_POST["telefone"]);
     $senha = $_POST["senha"];
     $confirmar_senha = $_POST["confirmar_senha"];
@@ -34,11 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<script>alert('As senhas não coincidem!'); window.location.href='cadast_aluno.php';</script>";
         exit;
     }
-
-    // Hash da senha antes de armazenar
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
-
-    // Inserção no banco de dados
     $stmt = $conn->prepare("INSERT INTO aluno (matricula, nome, telefone, senha) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("isss", $matricula, $nome, $telefone, $senhaHash);
 
