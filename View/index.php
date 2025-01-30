@@ -17,8 +17,12 @@
         .tlt-index{
             color: white;
         }
-        .bg-success{
-            height: 100px;
+        p{
+            text-align: justify;
+            text-indent: 1.5em;
+        }
+        .cont, .m-0{
+            text-align: center;
         }
     </style>
     
@@ -30,10 +34,12 @@
         <div class="container text-center text-white">
             <h1 class="tlt-index"><strong>Agendamento Pedagógico IFBA</strong></h1>
         </div>
-        <div class="container">
+        <div class="logo container">
             <a href="https://portal.ifba.edu.br/jacobina" target="_blank">
                 <img class="logoifba" src="assets/img/logoIFBA.jpeg" alt="Logo IFBA">
             </a>
+        </div>
+        
     </header>
 
     <!-- Navegação -->
@@ -44,13 +50,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#opcoes">Opções</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login_aluno.php"> Login Aluno</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.php"> Login Pedagoga </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#opcoes"> Login</a></li>
                 </ul>
             </div>
-    </nav>
+    </nav> <br>
 
     <!-- Carrossel de Imagens -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -88,7 +92,9 @@
     <section id="sobre" class="py-5">
         <div class="container text-center">
             <h2>Sobre o Sistema</h2>
-            <p>O sistema de Agendamento Pedagógico foi desenvolvido para melhorar a comunicação entre alunos e pedagogos, promovendo uma gestão eficiente de atendimentos no ambiente educacional.</p>
+            <p>No cenário educacional contemporâneo, a eficiência na administração dos serviços escolares é essencial para garantir a qualidade e a eficácia das atividades educacionais. O desenvolvimento de sistemas pedagógicos voltados para a otimização da gestão de compromissos e atividades educacionais tem se tornado uma necessidade crescente no ambiente acadêmico. </p>
+            <p>O sistema trata-se de uma aplicação web para o agendamento de atendimentos pedagógicos no site do IFBA, campus Jacobina, que tem como intuito proporcionar algo que seja colaborativo na interação entre os discentes e a pedagoga</p>
+            <p>Com a implementação do sistema web proposto, os alunos poderão agendar seus atendimentos de forma independente, sem precisar depender de contato manual ou de diferentes canais de comunicação. Esse sistema digital permitirá que a pedagoga organize sua agenda de maneira mais prática, com todos os dados disponíveis em um único local e acessíveis em tempo real. Além disso, a centralização dessas informações evitará a perda de dados e melhorará a comunicação entre alunos e pedagoga, o que permitirá um acompanhamento pedagógico mais preciso e eficiente.</p>
         </div>
     </section>
 
@@ -131,10 +137,20 @@
             <a href="login_aluno.php" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
             <a href="login.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
         </div>
+    </section> <br>
+
+    <!-- Contato -->
+    <section id="contato" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Entre em Contato</h2>
+            <p class="cont"><strong>Telefone:</strong></p>
+            <p class="cont"><strong>Email:</strong></p>
+            <p class="cont"><strong>Localização:</strong></p>
+        </div>
     </section>
 
-    <!-- Seção Desenvolvedor -->
-    <section class="py-5">
+     <!-- Seção Desenvolvedor -->
+     <section class="py-5">
         <div class="container text-center">
             <h2>Desenvolvedores</h2>
             <div class="row justify-content-center">
@@ -142,30 +158,29 @@
                     <img src="assets/img/Pablo.jpg" class="img-fluid rounded-circle mt-4" alt="Foto de Pablo Henrique">
                     <h4 class="mt-3">Pablo Henrique</h4>
                     <p>Estudante do IFBA campus Jacobina, Pablo criou este sistema para melhorar a gestão pedagógica e aprimorar a comunicação no ambiente educacional.</p>
+                    <h4>Entre em Contato</h4>
+                    <p class="cont"><strong>Telefone:</strong> (74)99913-4057</p>
+                    <p class="cont"><strong>Email:</strong> pablohenry1204@gmail.com</p>
+                    <p class="cont"><strong>Localização:</strong> Taquarendi, Mirangaba-BA</p>
                 </div>
                 <div class="col-md-4">
                     <img src="assets/img/foto-kari.webp" class="img-fluid rounded-circle mt-4" alt="Foto de Kariely">
                     <h4 class="mt-3">Kariely</h4>
                     <p>Estudante do IFBA campus Jacobina, Kariely criou este sistema para melhorar a gestão pedagógica e aprimorar a comunicação no ambiente educacional.</p>
+                    <h4>Entre em Contato</h4>
+                    <p class="cont"><strong>Telefone:</strong></p>
+                    <p class="cont"><strong>Email:</strong> </p>
+                    <p class="cont"><strong>Localização:</strong> Taquarendi, Mirangaba-BA</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="bg-light py-5">
-        <div class="container text-center">
-            <h2>Entre em Contato</h2>
-            <p><strong>Telefone:</strong> (74)99913-4057</p>
-            <p><strong>Email:</strong> pablohenry1204@gmail.com</p>
-            <p><strong>Localização:</strong> Taquarendi, Mirangaba-BA</p>
-        </div>
-    </section>
 
     <!-- Rodapé -->
     <footer class="footer text-center py-4 bg-success text-white">
         <div class="container">
-            <p class="m-0">Agendamento Pedagógico &copy; 2024 - Desenvolvido por Pablo Henrique</p>
+            <p class="m-0" >Agendamento Pedagógico &copy; 2024 - Desenvolvido por Pablo Henrique</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
