@@ -85,7 +85,7 @@
     <section id="sobre" class="py-5">
         <div class="container text-center">
             <h2>Sobre o Sistema</h2>
-            <p>O sistema de Agendamento Pedagógico foi desenvolvido para melhorar a comunicação entre alunos e pedagogos, promovendo uma gestão eficiente de atendimentos no ambiente educacional.</p>
+            <p> O sistema web para o agendamento de atendimentos pedagógicos é motivada pela necessidade de melhorar a organização e eficiência na gestão de compromissos em ambientes escolares, centralizando as informações. Além disso, a implementação de um sistema de agendamento promove a inclusão digital ao garantir que todos os alunos possam acessá-lo e utilizá-lo de maneira eficiente, independentemente de suas condições socioeconômicas ou limitações tecnológicas.</p>
         </div>
     </section>
 
