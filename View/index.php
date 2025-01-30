@@ -130,6 +130,17 @@
         </div>
     </section>
 
+    <!-- Contato -->
+    <section id="contato" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Entre em Contato</h2>
+            <p><strong>Instituto Federal de Educação, Ciência e Tecnologia da Bahia - Campus Jacobina</strong></p>
+            <p><strong>Telefone:</strong> 0800 074 7400</p>
+            <p><strong>Email:</strong>  dg.jac@ifba.edu.br </p>
+            <p><strong>Localização:</strong> Avenida Centenário, nº 500 - Bairro Nazaré</p>
+        </div>
+    </section>
+
     <!-- Seção Desenvolvedor -->
     <section class="py-5">
         <div class="container text-center">
@@ -149,15 +160,6 @@
         </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="bg-light py-5">
-        <div class="container text-center">
-            <h2>Entre em Contato</h2>
-            <p><strong>Telefone:</strong> (74)99913-4057</p>
-            <p><strong>Email:</strong> pablohenry1204@gmail.com</p>
-            <p><strong>Localização:</strong> Taquarendi, Mirangaba-BA</p>
-        </div>
-    </section>
 
     <!-- Rodapé -->
     <footer class="footer text-center py-4 bg-success text-white">
