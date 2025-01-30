@@ -69,9 +69,6 @@
                 <img src="assets/img/Agendamento 01.jpeg" class="d-block w-100" alt="Imagem de alunos">
             </div>
             <div class="carousel-item">
-                <img src="assets/img/Agendamento 02.jpeg" class="d-block w-100" alt="Imagem de reunião pedagógica">
-            </div>
-            <div class="carousel-item">
                 <img src="assets/img/Agendamento 03.jpeg" class="d-block w-100" alt="Imagem de sala de aula">
             </div>
             <div class="carousel-item">
@@ -148,6 +145,19 @@
             <p class="cont"><strong>Localização:</strong></p>
         </div>
     </section>
+    <div class='justify-center'>
+      <hr>
+    </div>
+    <!-- Contato -->
+    <section id="contato" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Entre em Contato</h2>
+            <p><strong>Instituto Federal de Educação, Ciência e Tecnologia da Bahia - Campus Jacobina</strong></p>
+            <p><strong>Telefone:</strong> 0800 074 7400</p>
+            <p><strong>Email:</strong>  dg.jac@ifba.edu.br </p>
+            <p><strong>Localização:</strong> Avenida Centenário, nº 500 - Bairro Nazaré</p>
+        </div>
+    </section>
 
      <!-- Seção Desenvolvedor -->
      <section class="py-5">
@@ -165,7 +175,7 @@
                 </div>
                 <div class="col-md-4">
                     <img src="assets/img/foto-kari.webp" class="img-fluid rounded-circle mt-4" alt="Foto de Kariely">
-                    <h4 class="mt-3">Kariely</h4>
+                    <h4 class="mt-3">Kariely Santos</h4>
                     <p>Estudante do IFBA campus Jacobina, Kariely criou este sistema para melhorar a gestão pedagógica e aprimorar a comunicação no ambiente educacional.</p>
                     <h4>Entre em Contato</h4>
                     <p class="cont"><strong>Telefone:</strong></p>
