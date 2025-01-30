@@ -155,7 +155,7 @@
                 </div>
                 <div class="col-md-4">
                     <img src="assets/img/foto-kari.webp" class="img-fluid rounded-circle mt-4" alt="Foto de Kariely">
-                    <h4 class="mt-3">Kariely</h4>
+                    <h4 class="mt-3">Kariely Santos</h4>
                     <p>Estudante do IFBA campus Jacobina, Kariely criou este sistema para melhorar a gestão pedagógica e aprimorar a comunicação no ambiente educacional.</p>
                 </div>
             </div>
@@ -166,7 +166,7 @@
     <!-- Rodapé -->
     <footer class="footer text-center py-4 bg-success text-white">
         <div class="container">
-            <p class="m-0">Agendamento Pedagógico &copy; 2024 - Desenvolvido por Pablo Henrique</p>
+            <p class="m-0">Agendamento Pedagógico &copy; 2024 - Desenvolvido por Pablo Henrique e Kariely Santos</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
