@@ -13,11 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $matricula = trim($_POST["matricula"]); 
     $telefone = trim($_POST["telefone"]);
     $senha = $_POST["senha"];
-<<<<<<< HEAD
     $confirmar_senha = $_POST["confirmarSenha"]; 
-=======
-    $confirmar_senha = $_POST["confirmarSenha"];
->>>>>>> c9740348d4413b85736465a6ffe96c321b689c04
 
     
     $verf = $conn->prepare("SELECT matricula FROM aluno WHERE matricula = ?");
