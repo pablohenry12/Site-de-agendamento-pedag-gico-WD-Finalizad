@@ -34,7 +34,6 @@
             <a href="https://portal.ifba.edu.br/jacobina" target="_blank">
                 <img class="logoifba" src="assets/img/logoIFBA.jpeg" alt="Logo IFBA">
             </a>
-        </div>
     </header>
 
     <!-- Navegação -->
