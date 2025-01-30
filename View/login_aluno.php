@@ -36,45 +36,55 @@
     <div class="container">
         <div class="form-container">
             <h3 class="text-center mb-4">Login Aluno</h3>
+
+
             <?php
-                session_start();
-                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                 // Conexão com o banco de dados
-                $conn = new mysqli('localhost', 'root', '', 'sistema_agendamento');
+session_start();
 
-                if ($conn->connect_error) {
-                die("Erro na conexão com o banco de dados: " . $conn->connect_error);
-                     }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $conn = new mysqli('localhost', 'root', '', 'sistema_agendamento');
 
-                $matricula = $_POST['matricula'];
-                $senha = $_POST['password'];
+    if ($conn->connect_error) {
+        die("Erro na conexão com o banco de dados: " . $conn->connect_error);
+    }
 
-                 // Consultar o banco de dados usando a matrícula
-                $stmt = $conn->prepare("SELECT * FROM alunos WHERE matricula = ?");
-                $stmt->bind_param("s", $matricula); // Mudança para matrícula
-                $stmt->execute();
-                $result = $stmt->get_result();
+    $matricula = trim($_POST['matricula']);
+    $senha = $_POST['password'];
 
-                if ($result->num_rows > 0) {
-                $user = $result->fetch_assoc();
-        
-                // Verificar senha
-                if (password_verify($senha, $user['senha'])) {
-                    $_SESSION['user_id'] = $user['id'];
-                    $_SESSION['user_matricula'] = $user['matricula'];
-                    header("Location: agendamento.php");
-                    exit;
-                } else {
-                echo '<div class="alert alert-danger">Senha incorreta.</div>';
-                }
-                } else {
-                echo '<div class="alert alert-danger">Matrícula não encontrada.</div>';
-                }
+    $verf = $conn->prepare("SELECT matricula, senha FROM Aluno WHERE matricula = ?");
+    
+    if (!$verf) {
+        die("Erro na preparação da consulta: " . $conn->error);
+    }
 
-                $stmt->close();
-                $conn->close();
-                }
-            ?>
+    $verf->bind_param("s", $matricula);
+    $verf->execute();
+    $result = $verf->get_result();
+
+    if ($result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+
+        if (password_verify($senha, $user['senha'])) {
+            $_SESSION['user_id'] = $user['matricula'];
+            $_SESSION['user_matricula'] = $user['matricula'];
+
+            header("Location: agendamento.php");
+            exit;
+        } else {
+            echo '<div class="alert alert-danger text-center">Senha incorreta.</div>';
+        }
+    } else {
+        echo '<div class="alert alert-danger text-center">Matrícula não encontrada.</div>';
+    }
+
+    $verf->close();
+    $conn->close();
+}
+?>
+
+
+
+
 <form method="POST" action="">
     <div class="mb-3">
         <label for="matricula" class="form-label">Matrícula</label>
