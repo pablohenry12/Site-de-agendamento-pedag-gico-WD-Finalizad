@@ -65,9 +65,6 @@
                 <img src="assets/img/Agendamento 01.jpeg" class="d-block w-100" alt="Imagem de alunos">
             </div>
             <div class="carousel-item">
-                <img src="assets/img/Agendamento 02.jpeg" class="d-block w-100" alt="Imagem de reunião pedagógica">
-            </div>
-            <div class="carousel-item">
                 <img src="assets/img/Agendamento 03.jpeg" class="d-block w-100" alt="Imagem de sala de aula">
             </div>
             <div class="carousel-item">
