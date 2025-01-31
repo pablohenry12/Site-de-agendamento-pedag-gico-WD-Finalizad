@@ -17,8 +17,10 @@
         .tlt-index{
             color: white;
         }
-        .bg-success{
-            height: 100px;
+        .parg{
+            text-indent: 1.5em;
+            text-align: justify;
+            
         }
     </style>
     
@@ -44,10 +46,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#opcoes">Opções</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login_aluno.php"> Login Aluno</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.php"> Login Pedagoga </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#opcoes"> Login</a></li>
+                    
                 </ul>
             </div>
     </nav>
@@ -85,7 +86,12 @@
     <section id="sobre" class="py-5">
         <div class="container text-center">
             <h2>Sobre o Sistema</h2>
-            <p> O sistema web para o agendamento de atendimentos pedagógicos é motivada pela necessidade de melhorar a organização e eficiência na gestão de compromissos em ambientes escolares, centralizando as informações. Além disso, a implementação de um sistema de agendamento promove a inclusão digital ao garantir que todos os alunos possam acessá-lo e utilizá-lo de maneira eficiente, independentemente de suas condições socioeconômicas ou limitações tecnológicas.</p>
+            <p class="parg">No cenário educacional contemporâneo, a eficiência na administração dos serviços escolares é essencial para garantir a qualidade e a eficácia das atividades educacionais. O desenvolvimento de sistemas pedagógicos voltados para a otimização da gestão de compromissos e atividades educacionais tem se tornado uma necessidade crescente no ambiente acadêmico. 
+            </p>
+            <p class="parg">O Sistema trata-se de uma aplicação web para o agendamento de atendimentos pedagógicos no site do IFBA, campus Jacobina, que tem como intuito proporcionar algo que seja colaborativo na interação entre os discentes e a pedagoga. O objetivo da aplicação é centralizar o agendamento em uma página web que envolva todas as informações necessárias para que o discente consiga fazer o agendamento de forma mais independente e também melhore a gestão da pedagoga em relação aos alunos.
+            </p>
+            <p class="parg">Os sistemas de informação têm sido cada vez mais utilizados em vários setores da sociedade, sendo fundamentais para melhorar a interação entre pessoas e organizações. Eles ajudam a tornar os processos mais ágeis e eficientes, automatizando tarefas que antes eram feitas manualmente e transformando documentos físicos em registros digitais. Dessa forma, as informações ficam mais acessíveis e organizadas, podendo ser usadas de maneira estratégica. A digitalização dos processos não só melhora a eficiência das atividades, mas também facilita a tomada de decisões, já que os dados ficam centralizados e mais confiáveis. No ambiente educacional, os sistemas de informação podem trazer muitos benefícios, como a melhoria na gestão de atendimentos pedagógicos, criando um sistema centralizado que torna o agendamento de compromissos e o acompanhamento do desempenho dos alunos mais fácil e eficiente.</p>
+
         </div>
     </section>
 
@@ -125,6 +131,9 @@
     <section id="opcoes" class="bg-light py-5 text-center">
         <div class="container">
             <h2>Escolha uma das opções abaixo</h2>
+            <p><strong>Agendamento do Aluno:</strong> Para marcar um atendimento pedagógico, clique em "Agendamento de Aluno". Em seguida, faça login (caso não tenha conta click em "Cadastre-se") com sua matrícula e senha. Escolha a data, horário e turma, e clique em "Confirmar Atendimento". Você receberá a confirmação do agendamento na tela.</p>
+            <p><strong>Área Administrativa:</strong> A pedagoga pode acessar a área administrativa clicando em "Área Administrativa". Após o login, será possível visualizar todos os agendamentos feitos pelos alunos e gerenciá-los.</p>
+    
             <a href="login_aluno.php" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
             <a href="login.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
         </div>
