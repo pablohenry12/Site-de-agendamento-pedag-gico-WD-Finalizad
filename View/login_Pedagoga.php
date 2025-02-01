@@ -43,7 +43,7 @@
             <h3 class="text-center mb-4">Acesso Administrativo</h3>
             <form action="login_admin.php" method="POST">
     <div class="mb-3">
-        <label for="username" class="form-label">Usuário</label>
+        <label for="username" class="form-label">Siape</label>
         <input type="text" class="form-control" id="username" name="username" placeholder="Seu usuário" required>
     </div>
     <div class="mb-3">

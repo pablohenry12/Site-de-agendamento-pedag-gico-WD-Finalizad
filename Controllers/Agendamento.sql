@@ -15,13 +15,11 @@ CREATE TABLE Aluno (
     telefone VARCHAR(20),
     senha VARCHAR(30) NOT NULL
 );
-SHOW CREATE TABLE Atende;
-DROP TABLE IF EXISTS Atende;
 
 
 -- Tabela Atende
 CREATE TABLE Atendimento (
-    data DATE NOT NULL,
+    data_atendimento DATE NOT NULL,
     hora TIME NOT NULL,
     turma VARCHAR(10),
     descricao TEXT,
