@@ -56,9 +56,6 @@
                 <img src="View/assets/img/Agendamento 01.jpeg" class="d-block w-100" alt="Imagem de sala de atendimento">
             </div>
             <div class="carousel-item">
-                <img src="View/assets/img/Agendamento 02.jpeg" class="d-block w-100" alt="Imagem de sala de atendimento">
-            </div>
-            <div class="carousel-item">
                 <img src="View/assets/img/Agendamento 03.jpeg" class="d-block w-100" alt="Imagem de sala de atendimento">
             </div>
             <div class="carousel-item">
@@ -96,24 +93,22 @@
         <div class="row justify-content-center">
             <!-- Primeira pedagoga -->
             <div class="col-md-4">
-                <img src="assets/img/pedagoga1.jpg" class="img-fluid rounded-circle mt-4" alt="Foto Pedagoga 1" />
-                <h4 class="mt-3">Maria Clara</h4>
+                <img src="View/assets/img/foto-maria.png" class="img-fluid rounded-circle mt-4" alt="Foto Pedagoga 1" />
+                <h4 class="mt-3">Maria Clara Fortes Silva</h4>
                 <p>Formação: Licenciatura em Pedagogia</p>
                 <p>Cargo: Coordenadora Pedagógica</p>
                 <h4>Contato</h4>
-                <p>WhatsApp: ...</p>
-                <p>Email: ...</p>
+                <p>Email: maria.fortes@ifba.edu.br</p>
             </div>
 
             <!-- Segunda pedagoga -->
             <div class="col-md-4">
-                <img src="assets/img/pedagoga2.jpg" class="img-fluid rounded-circle mt-4" alt="Foto Pedagoga 2" />
-                <h4 class="mt-3">Liu</h4>
+                <img src="View/assets/img/foto-liu.png" class="img-fluid rounded-circle mt-4" alt="Foto Pedagoga 2" />
+                <h4 class="mt-3"> Eliene Maria Sales Santos</h4>
                 <p>Formação: Licenciatura em Letras</p>
                 <p>Cargo: Professora de Língua Portuguesa</p>
                 <h4>Contato</h4>
-                <p>WhatsApp: ...</p>
-                <p>Email: ...</p>
+                <p>Email: eliene.sales@ifba.edu.br</p>
             </div>
         </div>
     </div>
