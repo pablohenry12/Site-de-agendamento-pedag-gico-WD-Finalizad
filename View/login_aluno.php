@@ -4,41 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Agendamento Pedagógico</title>
-    <link rel="icon" type="image/x-icon" href="assets/faviconIFBA.png">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/login_aluno.css">
-    </head>
-
+</head>
 <body>
+
 <div class="back-button">
-<a href="http://localhost/Site%20de%20agendamento%20pedag%c3%b3gico-WD%20Finalizado/Site%20de%20agendamento%20pedag%c3%b3gico-WD/index_prj.php" class="btn btn-secondary">Voltar</a>
- 
+    <a href="../index_prj.php" class="btn btn-secondary">Voltar</a>
 </div>
 
+<div class="container">
+    <div class="form-container">
+        <h3 class="text-center mb-4">Login Aluno</h3>
 
-    <div class="container">
-        <div class="form-container">
-            <h3 class="text-center mb-4">Login Aluno</h3>
+        <?php if (isset($_GET['erro'])) { ?>
+            <div class="alert alert-danger text-center"><?php echo htmlspecialchars($_GET['erro']); ?></div>
+        <?php } ?>
 
-<form method="POST" action="">
-    <div class="mb-3">
-        <label for="matricula" class="form-label">Matrícula</label>
-        <input type="number" class="form-control" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>
+        <form method="POST" action="../Models/validar_login_aluno.php">
+            <div class="mb-3">
+                <label for="matricula" class="form-label">Matrícula</label>
+                <input type="number" class="form-control" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Entrar</button>
+        </form>
+
+        <div class="mt-3 text-center">
+            <p class="small">Não possui conta? <a href="../View/cadast_aluno.php">Cadastre-se</a></p>
+        </div>
     </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Senha</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
-    </div>
-    <button type="submit" class="btn btn-success w-100">Entrar</button>
-</form>
-<div class="mt-3 text-center">
-    <p class="small">Não possui conta? <a href="cadast_aluno.php">Cadastre-se</a></p>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

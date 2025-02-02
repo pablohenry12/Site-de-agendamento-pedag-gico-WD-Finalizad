@@ -9,71 +9,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/faviconIFBA.png">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        body {
-            font-family: 'Raleway', sans-serif;
-        }
-        .form-container {
-            max-width: 600px;
-            margin: 5% auto;
-            padding: 2rem;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .btn-success {
-            background-color: #28a745;
-            border: none;
-        }
-        .btn-success:hover {
-            background-color: #218838;
-        }
-    </style>
+    <link rel="stylesheet" href="css/cadastrar_aluno.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-            <a href="https://portal.ifba.edu.br/jacobina" target="_blank">
-                <img class="logoifba" src="assets/img/logoIFBA.jpeg" alt="Logo IFBA" width="100">
-            </a>
-            <a class="navbar-brand" href="index.php">Início</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
     <!-- Formulário de Agendamento -->
     <div class="form-container">
         <h2 class="text-center mb-4">Agendamento de Atendimento</h2>
         <form>
-            <!-- Campo Nome Completo -->
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome Completo</label>
                 <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
             </div>
-            
-            <!-- Campo Número da Turma -->
             <div class="mb-3">
                 <label for="turma" class="form-label">Número da Turma</label>
                 <input type="text" class="form-control" id="turma" placeholder="Número da sua turma" required>
             </div>
-
-            <!-- Campo Data -->
             <div class="mb-3">
                 <label for="data" class="form-label">Data do Atendimento</label>
                 <input type="date" class="form-control" id="data" required>
             </div>
 
-            <!-- Campo Hora -->
             <div class="mb-3">
                 <label for="hora" class="form-label">Hora do Atendimento</label>
                 <select class="form-select" id="hora" required>

@@ -28,19 +28,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
     if ($senha !== $confirmar_senha) {
-        echo "<script>alert('As senhas não coincidem!'); window.location.href='cadast_aluno.php';</script>";
+        echo "<script>
+                alert('As senhas não coincidem!'); 
+                window.location.href = '../View/cadast_aluno.php';
+              </script>";
         exit;
     }
+    
 
     
     $stmt = $conn->prepare("INSERT INTO aluno (matricula, nome, telefone, senha) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("ssss", $matricula, $nome, $telefone, $senha);
     
     if ($stmt->execute()) {
-        echo "<script>alert('Cadastro realizado com sucesso!'); window.location.href='login_aluno.php';</script>";
+        echo "<script>
+                alert('Cadastro realizado com sucesso!');
+                window.location.href = '../View/login_aluno.php';
+              </script>";
     } else {
-        echo "<script>alert('Erro ao cadastrar. Tente novamente.'); window.location.href='cadast_aluno.php';</script>";
+        echo "<script>
+                alert('Erro ao cadastrar. Tente novamente.');
+                window.location.href = '../View/cadast_aluno.php';
+              </script>";
     }
+    
 
     $stmt->close();
 }

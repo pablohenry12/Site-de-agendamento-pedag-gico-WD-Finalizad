@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/faviconIFBA.png" />
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/login_aluno.css">
+    <link rel="stylesheet" href="css/admin.css">
 
 </head>
 
@@ -19,7 +19,7 @@
     <div class="container">
         <h1 class="text-center mb-4">Área Administrativa</h1>
         <div class="mb-4 text-end">
-            <a href="login.php" class="btn btn-secondary">Sair</a>
+            <a href="login_Pedagoga.php" class="btn btn-secondary">Sair</a>
         </div>
 
         <h3>Agendamentos Disponíveis</h3>
