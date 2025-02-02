@@ -26,6 +26,10 @@
                 <input type="text" class="form-control" id="turma" placeholder="Número da sua turma" required>
             </div>
             <div class="mb-3">
+                <label for="turma" class="form-label">Descrição</label>
+                <input type="text" class="form-control" id="descricao" placeholder="Motivo do seu atendimento" required>
+            </div>
+            <div class="mb-3">
                 <label for="data" class="form-label">Data do Atendimento</label>
                 <input type="date" class="form-control" id="data" required>
             </div>
