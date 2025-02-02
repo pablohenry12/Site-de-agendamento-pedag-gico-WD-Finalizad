@@ -1,0 +1,29 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    margin-top: 30px;
+    background-color: aliceblue;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+table{
+    background-color: #fff;
+}

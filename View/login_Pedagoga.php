@@ -8,36 +8,15 @@
     <title>Login - Área Administrativa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/faviconIFBA.png" />
+    <link rel="icon" type="image/x-icon" href="assets/Favicon Logo IFBA.png" />
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        body {
-            font-family: 'Raleway', sans-serif;
-        }
-
-        .form-container {
-            max-width: 400px;
-            margin: 5% auto;
-            padding: 2rem;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-success {
-            background-color: #28a745;
-            border: none;
-        }
-
-        .btn-success:hover {
-            background-color: #218838;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="css/login_pedagoga.css">
+    </head>
 
 <body>
     <div class="back-button">
-        <a href="index.php" class="btn btn-secondary">Voltar</a>
+    <a href="http://localhost/Site%20de%20agendamento%20pedag%c3%b3gico-WD%20Finalizado/Site%20de%20agendamento%20pedag%c3%b3gico-WD/index_prj.php" class="btn btn-secondary">Voltar</a>
+
     <div class="container">
         <div class="form-container">
             <h3 class="text-center mb-4">Acesso Administrativo</h3>

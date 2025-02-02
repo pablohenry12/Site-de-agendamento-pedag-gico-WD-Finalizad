@@ -30,7 +30,7 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
             <a href="https://portal.ifba.edu.br/jacobina" target="_blank">
@@ -43,11 +43,10 @@
         </div>
     </nav>
 
-    <!-- Título da Página -->
     <div class="container">
         <h2 class="text-center mb-4">Meus Agendamentos</h2>
 
-        <!-- Tabela de Agendamentos -->
+        
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -60,7 +59,7 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Exemplo de Agendamento -->
+                
                 <tr>
                     <th scope="row">1</th>
                     <td>João da Silva</td>
@@ -76,7 +75,6 @@
         </table>
     </div>
 
-    <!-- Modal para Edição de Agendamento -->
     <div class="modal fade" id="editarModal" tabindex="-1" aria-labelledby="editarModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -114,7 +112,6 @@
         </div>
     </div>
 
-    <!-- Modal de Confirmação para Exclusão -->
     <div class="modal fade" id="confirmarExcluirModal" tabindex="-1" aria-labelledby="confirmarExcluirModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -140,7 +137,6 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

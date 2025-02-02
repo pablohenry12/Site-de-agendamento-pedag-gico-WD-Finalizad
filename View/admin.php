@@ -11,37 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/faviconIFBA.png" />
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        body {
-            font-family: 'Raleway', sans-serif;
-        }
+    <link rel="stylesheet" href="css/login_aluno.css">
 
-        .container {
-            margin-top: 30px;
-            background-color: aliceblue;
-        }
-
-        .btn-edit {
-            background-color: #ffc107;
-            color: #fff;
-        }
-
-        .btn-edit:hover {
-            background-color: #e0a800;
-        }
-
-        .btn-delete {
-            background-color: #dc3545;
-            color: #fff;
-        }
-
-        .btn-delete:hover {
-            background-color: #c82333;
-        }
-        table{
-            background-color: #fff;
-        }
-    </style>
 </head>
 
 <body>

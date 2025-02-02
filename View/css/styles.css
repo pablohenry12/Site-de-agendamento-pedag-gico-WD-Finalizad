@@ -8144,7 +8144,7 @@ textarea.form-control-lg {
 }
 
 .bg-success {
-  width: 50%;
+  width: 100%;
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
   
@@ -10849,7 +10849,7 @@ background-color: #2dfb64;
   }
 }
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/Campus\ Jacobina.jpeg");
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("Campus\ Jacobina.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

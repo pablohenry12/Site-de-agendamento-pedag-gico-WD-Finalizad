@@ -1,0 +1,21 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}

@@ -8,22 +8,11 @@
     <meta name="keywords" content="agendamento, Pedagoga, IFBA, Jacobina" />
     <meta name="author" content="Pablo Henrique Freire de Jesus" />
     <title>Agendamento Pedagógico</title>
-    <link rel="icon" type="image/x-icon" href="assets/Favicon Logo IFBA.png" />
+    <link rel="icon" type="image/x-icon" href="View/assets/Favicon Logo IFBA.png" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles02.css">
-    <style>
-        .tlt-index{
-            color: white;
-        }
-        .parg{
-            text-indent: 1.5em;
-            text-align: justify;
-            
-        }
-    </style>
-    
+    <link href="View//css//styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="View//css//styles02.css">
 </head>
 
 <body>
@@ -33,9 +22,10 @@
             <h1 class="tlt-index"><strong>Agendamento Pedagógico IFBA</strong></h1>
         </div>
         <div class="container">
-            <a href="https://portal.ifba.edu.br/jacobina" target="_blank">
-                <img class="logoifba" src="assets/img/logoIFBA.jpeg" alt="Logo IFBA">
-            </a>
+        <a href="https://portal.ifba.edu.br/jacobina" target="_blank">
+    <img class="logoifba" src="View/assets/img/logoIFBA.jpeg" alt="Logo IFBA">
+</a>
+
     </header>
 
     <!-- Navegação -->
@@ -63,13 +53,16 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/img/Agendamento 01.jpeg" class="d-block w-100" alt="Imagem de alunos">
+                <img src="View/assets/img/Agendamento 01.jpeg" class="d-block w-100" alt="Imagem de sala de atendimento">
             </div>
             <div class="carousel-item">
-                <img src="assets/img/Agendamento 03.jpeg" class="d-block w-100" alt="Imagem de sala de aula">
+                <img src="View/assets/img/Agendamento 02.jpeg" class="d-block w-100" alt="Imagem de sala de atendimento">
             </div>
             <div class="carousel-item">
-                <img src="assets/img/Campus Jacobina.jpeg" class="d-block w-100" alt="Imagem do campus">
+                <img src="View/assets/img/Agendamento 03.jpeg" class="d-block w-100" alt="Imagem de sala de atendimento">
+            </div>
+            <div class="carousel-item">
+                <img src="View/assets/img/Campus Jacobina.jpeg" class="d-block w-100" alt="Imagem do campus">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -134,8 +127,8 @@
             <p><strong>Agendamento do Aluno:</strong> Para marcar um atendimento pedagógico, clique em "Agendamento de Aluno". Em seguida, faça login (caso não tenha conta click em "Cadastre-se") com sua matrícula e senha. Escolha a data, horário e turma, e clique em "Confirmar Atendimento". Você receberá a confirmação do agendamento na tela.</p>
             <p><strong>Área Administrativa:</strong> A pedagoga pode acessar a área administrativa clicando em "Área Administrativa". Após o login, será possível visualizar todos os agendamentos feitos pelos alunos e gerenciá-los.</p>
     
-            <a href="login_aluno.php" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
-            <a href="login.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
+            <a href="View/login_aluno.php" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
+            <a href="View/login_Pedagoga.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
         </div>
     </section>
     <div class='justify-center'>
@@ -158,12 +151,12 @@
             <h2>Desenvolvedores</h2>
             <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <img src="assets/img/Pablo.jpg" class="img-fluid rounded-circle mt-4" alt="Foto de Pablo Henrique">
+                    <img src="View/assets/img/Pablo.jpg" class="img-fluid rounded-circle mt-4" alt="Foto de Pablo Henrique">
                     <h4 class="mt-3">Pablo Henrique</h4>
                     <p>Estudante do IFBA campus Jacobina, Pablo criou este sistema para melhorar a gestão pedagógica e aprimorar a comunicação no ambiente educacional.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/img/foto-kari.webp" class="img-fluid rounded-circle mt-4" alt="Foto de Kariely">
+                    <img src="View/assets/img/foto-kari.webp" class="img-fluid rounded-circle mt-4" alt="Foto de Kariely">
                     <h4 class="mt-3">Kariely Santos</h4>
                     <p>Estudante do IFBA campus Jacobina, Kariely criou este sistema para melhorar a gestão pedagógica e aprimorar a comunicação no ambiente educacional.</p>
                 </div>
