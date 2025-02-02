@@ -96,7 +96,7 @@
         <div class="row justify-content-center">
             <!-- Primeira pedagoga -->
             <div class="col-md-4">
-                <img src="assets/img/foto-maria.png" class="img-fluid rounded-circle mt-4" alt="Foto Pedagoga 1" />
+                <img src="View/assets/img/foto-maria.png" class="img-fluid rounded-circle mt-4" alt="Foto Pedagoga 1" />
                 <h4 class="mt-3">Maria Clara Fortes Silva</h4>
                 <p>Formação: Licenciatura em Pedagogia</p>
                 <p>Cargo: Coordenadora Pedagógica</p>
