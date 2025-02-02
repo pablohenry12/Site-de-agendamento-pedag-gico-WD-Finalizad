@@ -15,7 +15,7 @@
 
 <body>
     <div class="back-button">
-    <a href="http://localhost/Site%20de%20agendamento%20pedag%c3%b3gico-WD%20Finalizado/Site%20de%20agendamento%20pedag%c3%b3gico-WD/index_prj.php" class="btn btn-secondary">Voltar</a>
+    <a href="../index_prj.php" class="btn btn-secondary">Voltar</a>
 
     <div class="container">
         <div class="form-container">
