@@ -56,9 +56,6 @@
                 <img src="View/assets/img/Agendamento 01.jpeg" class="d-block w-100" alt="Imagem de sala de atendimento">
             </div>
             <div class="carousel-item">
-                <img src="View/assets/img/Agendamento 02.jpeg" class="d-block w-100" alt="Imagem de sala de atendimento">
-            </div>
-            <div class="carousel-item">
                 <img src="View/assets/img/Agendamento 03.jpeg" class="d-block w-100" alt="Imagem de sala de atendimento">
             </div>
             <div class="carousel-item">
