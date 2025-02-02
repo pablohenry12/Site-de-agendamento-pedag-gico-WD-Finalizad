@@ -106,7 +106,7 @@
 
             <!-- Segunda pedagoga -->
             <div class="col-md-4">
-                <img src="assets/img/pedagoga2.jpg" class="img-fluid rounded-circle mt-4" alt="Foto Pedagoga 2" />
+                <img src="View/assets/img/foto-liu.png" class="img-fluid rounded-circle mt-4" alt="Foto Pedagoga 2" />
                 <h4 class="mt-3"> Eliene Maria Sales Santos</h4>
                 <p>Formação: Licenciatura em Letras</p>
                 <p>Cargo: Professora de Língua Portuguesa</p>
