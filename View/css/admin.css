@@ -1,29 +1,101 @@
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    margin-top: 30px;
-    background-color: aliceblue;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+    text-align: center;
+    color: #343a40;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table th {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
 }
 
 .btn-edit {
-    background-color: #ffc107;
-    color: #fff;
+    background-color: #007bff;
+    color: white;
+    border: none;
 }
 
 .btn-edit:hover {
-    background-color: #e0a800;
+    background-color: #0056b3;
 }
 
 .btn-delete {
     background-color: #dc3545;
-    color: #fff;
+    color: white;
+    border: none;
 }
 
 .btn-delete:hover {
-    background-color: #c82333;
+    background-color: #b02a37;
 }
-table{
-    background-color: #fff;
+
+form {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.form-check-label {
+    margin-left: 5px;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #343a40;
+    color: white;
 }
