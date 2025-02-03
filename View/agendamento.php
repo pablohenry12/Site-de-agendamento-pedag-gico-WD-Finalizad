@@ -16,27 +16,27 @@
     <!-- Formulário de Agendamento -->
     <div class="form-container">
         <h2 class="text-center mb-4">Agendamento de Atendimento</h2>
-        <form>
+        <form method="POST" action="../Controllers/processar_agendamento.php">
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome Completo</label>
-                <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
+                <input type="text" class="form-control" name="nome" placeholder="Seu nome completo" required>
             </div>
             <div class="mb-3">
                 <label for="turma" class="form-label">Número da Turma</label>
-                <input type="text" class="form-control" id="turma" placeholder="Número da sua turma" required>
+                <input type="text" class="form-control" name="turma" placeholder="Número da sua turma" required>
             </div>
             <div class="mb-3">
-                <label for="turma" class="form-label">Descrição</label>
-                <input type="text" class="form-control" id="descricao" placeholder="Motivo do seu atendimento" required>
+                <label for="descricao" class="form-label">Descrição</label>
+                <input type="text" class="form-control" name="descricao" placeholder="Motivo do seu atendimento" required>
             </div>
             <div class="mb-3">
                 <label for="data" class="form-label">Data do Atendimento</label>
-                <input type="date" class="form-control" id="data" required>
+                <input type="date" class="form-control" name="data" required>
             </div>
 
             <div class="mb-3">
                 <label for="hora" class="form-label">Hora do Atendimento</label>
-                <select class="form-select" id="hora" required>
+                <select class="form-select" name="hora" required>
                     <option value="">Selecione a hora</option>
                     <option value="14:00">14:00</option>
                     <option value="15:00">15:00</option>
