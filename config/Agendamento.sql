@@ -22,6 +22,7 @@ CREATE TABLE Aluno (
 
 -- Tabela Atende
 CREATE TABLE Atendimento (
+    nome VARCHAR(100) NOT NULL,
     data DATE NOT NULL,
     hora TIME NOT NULL,
     turma VARCHAR(10),
