@@ -36,7 +36,7 @@
             <a href="https://portal.ifba.edu.br/jacobina" target="_blank">
                 <img class="logoifba" src="assets/img/logoIFBA.jpeg" alt="Logo IFBA" width="100">
             </a>
-            <a class="navbar-brand" href="index.php">Início</a>
+            <a class="navbar-brand" href="../index_prj.php">Início</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
