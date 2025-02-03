@@ -22,7 +22,7 @@ CREATE TABLE Aluno (
 
 -- Tabela Atende
 CREATE TABLE Atendimento (
-    data DATE NOT NULL,
+    data_atendimento DATE NOT NULL,
     hora TIME NOT NULL,
     turma VARCHAR(10),
     descricao TEXT,
@@ -34,3 +34,4 @@ CREATE TABLE Atendimento (
 
 
 INSERT INTO Pedagoga (siape, nome, senha) VALUES (123456, 'Maria Clara', '123456');
+
