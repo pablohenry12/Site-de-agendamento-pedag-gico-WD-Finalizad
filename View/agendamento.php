@@ -13,6 +13,10 @@
 </head>
 <body>
 
+<div class="back-button">
+    <a href="../login_aluno.php" class="btn btn-secondary">Sair</a>
+</div>
+
     <!-- Formulário de Agendamento -->
     <div class="form-container">
         <h2 class="text-center mb-4">Agendamento de Atendimento</h2>
