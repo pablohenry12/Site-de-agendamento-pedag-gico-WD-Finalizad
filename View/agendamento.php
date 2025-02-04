@@ -14,11 +14,11 @@
 <body>
 
     <!-- Formulário de Agendamento -->
-    <div class="mb-4 text-end">
-            <a href="login_Pedagoga.php" class="btn btn-secondary">Sair</a>
-        </div>
     <div class="form-container">
         <h2 class="text-center mb-4">Agendamento de Atendimento</h2>
+        <div class="mb-4 text-end">
+            <a href="login_aluno.php" class="btn btn-secondary">Sair</a>
+        </div>
         <form>
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome Completo</label>
