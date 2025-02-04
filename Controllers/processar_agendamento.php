@@ -1,22 +1,46 @@
 <?php
-include '../Models/conexao.php';
+session_start();
+
+// Conexão com o banco de dados
+$conn = new mysqli('localhost', 'root', '', 'sistema_agendamento');
+if ($conn->connect_error) {
+    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $aluno = $_POST['aluno'];
-    $matricula = $_POST['matricula'];
-    $turma = $_POST['turma'];
-    $data = $_POST['data'];
-    $hora = $_POST['hora'];
+    $nome = trim($_POST["nome"] ?? '');
+    $turma = trim($_POST["turma"] ?? '');
+    $descricao = trim($_POST["descricao"] ?? '');
+    $data = trim($_POST["data"] ?? '');
+    $hora = trim($_POST["hora"] ?? '');
 
-    $sql = "INSERT INTO Atendimento (data_atendimento, hora, aluno, matricula, turma, descricao, codigo_pedagoga)
-            VALUES ('$data', '$hora', '$aluno', '$matricula', '$turma', 'Atendimento Agendado', '123456')";
-
-    if ($conn->query($sql) === TRUE) {
-        header("Location: ../View/admin.php");
-    } else {
-        echo "Erro: " . $sql . "<br>" . $conn->error;
+    // Verifica se todos os campos foram preenchidos
+    if (empty($nome) || empty($turma) || empty($descricao) || empty($data) || empty($hora)) {
+        die("Erro: Todos os campos são obrigatórios!");
     }
 
-    $conn->close();
+    
+    $stmt = $conn->prepare("INSERT INTO atendimento (nome, turma, descricao, data, hora) VALUES (?, ?, ?, ?, ?)");
+    if (!$stmt) {
+        die("Erro ao preparar a consulta: " . $conn->error);
+    }
+
+    $stmt->bind_param("sssss", $nome, $turma, $descricao, $data, $hora);
+
+    if ($stmt->execute()) {
+        echo "<script>
+                alert('Agendamento realizado com sucesso!');
+                window.location.href = '../View/pag_aluno.php';
+              </script>";
+    } else {
+        echo "<script>
+                alert('Erro ao agendar: " . $stmt->error . "');
+                window.location.href = '../View/agendamento.php';
+              </script>";
+    }
+
+    $stmt->close();
 }
+
+$conn->close();
 ?>
