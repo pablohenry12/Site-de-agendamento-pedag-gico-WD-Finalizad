@@ -11,21 +11,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = trim($_POST["nome"] ?? '');
     $turma = trim($_POST["turma"] ?? '');
     $descricao = trim($_POST["descricao"] ?? '');
-    $data = trim($_POST["data"] ?? '');
+    $dia = trim($_POST["dia"] ?? '');
     $hora = trim($_POST["hora"] ?? '');
 
     // Verifica se todos os campos foram preenchidos
-    if (empty($nome) || empty($turma) || empty($descricao) || empty($data) || empty($hora)) {
+    if (empty($nome) || empty($turma) || empty($descricao) || empty($dia) || empty($hora)) {
         die("Erro: Todos os campos são obrigatórios!");
     }
 
     
-    $stmt = $conn->prepare("INSERT INTO atendimento (nome, turma, descricao, data, hora) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO atendimento (nome, turma, descricao, dia, hora) VALUES (?, ?, ?, ?, ?)");
     if (!$stmt) {
         die("Erro ao preparar a consulta: " . $conn->error);
     }
 
-    $stmt->bind_param("sssss", $nome, $turma, $descricao, $data, $hora);
+    $stmt->bind_param("sssss", $nome, $turma, $descricao, $dia, $hora);
 
     if ($stmt->execute()) {
         echo "<script>
