@@ -64,7 +64,7 @@
                     <th scope="row">1</th>
                     <td>João da Silva</td>
                     <td>1813</td>
-                    <td>12/12/2024</td>
+                    <td>20/02/2024</td>
                     <td>14:00</td>
                     <td>
                         <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editarModal">Editar</button>

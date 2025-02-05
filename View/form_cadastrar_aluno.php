@@ -13,7 +13,7 @@
 
 <body>
     <div class="back-button">
-        <a href="login_aluno.php" class="btn btn-secondary">Voltar</a>
+        <a href="form_login_aluno.php" class="btn btn-secondary">Voltar</a>
     </div>
 
     <div class="container">

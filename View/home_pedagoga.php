@@ -37,9 +37,9 @@
                 <!-- Dados dos agendamentos carregados dinamicamente -->
                 <tr>
                     <td>João Silva</td>
-                    <td>3º A</td>
-                    <td>2025-01-25</td>
-                    <td>14:00</td>
+                    <td>1813</td>
+                    <td>20-02-2025</td>
+                    <td>15:00</td>
                     <td>
                         <button class="btn btn-edit btn-sm">Editar</button>
                         <button class="btn btn-delete btn-sm">Excluir</button>
@@ -48,9 +48,9 @@
                 <tr>
 
                     <td>Maria Santos</td>
-                    <td>2º B</td>
-                    <td>2025-01-26</td>
-                    <td>09:00</td>
+                    <td>3812</td>
+                    <td>20-02-2025</td>
+                    <td>14:00</td>
                     <td>
                         <button class="btn btn-edit btn-sm">Editar</button>
                         <button class="btn btn-delete btn-sm">Excluir</button>

@@ -16,10 +16,9 @@
     <div class="form-container">
         <h2 class="text-center mb-4">Agendamento de Atendimento</h2>
 
-        <!-- FORMULÁRIO CONECTADO AO PHP -->
         <form action="../Controllers/processar_agendamento.php" method="POST">
             <div class="mb-4 text-end">
-                <a href="login_aluno.php" class="btn btn-secondary">Sair</a>
+                <a href="form_login_aluno.php" class="btn btn-secondary">Sair</a>
             </div>
             
             <div class="mb-3">
@@ -67,7 +66,7 @@
         </form>
         
         <button class="btn btn-success w-100 mt-2">
-            <a href="pag_aluno.php" style="text-decoration: none; color: white;">Ver meus agendamentos</a>
+            <a href="home_aluno.php" style="text-decoration: none; color: white;">Ver meus agendamentos</a>
         </button>
     </div>
 

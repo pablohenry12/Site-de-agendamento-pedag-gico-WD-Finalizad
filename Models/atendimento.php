@@ -1,10 +1,11 @@
 <?php
 session_start();
 
-// Conexão com o banco de dados
-$conn = new mysqli('localhost', 'root', '', 'sistema_agendamento');
-if ($conn->connect_error) {
-    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
+try {
+    $conn = new PDO("mysql:host=localhost;dbname=sistema_agendamento;charset=utf8", "root", "");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erro na conexão com o banco de dados: " . $e->getMessage());
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -14,33 +15,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dia = trim($_POST["dia"] ?? '');
     $hora = trim($_POST["hora"] ?? '');
 
-    // Verifica se todos os campos foram preenchidos
     if (empty($nome) || empty($turma) || empty($descricao) || empty($dia) || empty($hora)) {
-        die("Erro: Todos os campos são obrigatórios!");
-    }
-
-    
-    $stmt = $conn->prepare("INSERT INTO atendimento (nome, turma, descricao, dia, hora) VALUES (?, ?, ?, ?, ?)");
-    if (!$stmt) {
-        die("Erro ao preparar a consulta: " . $conn->error);
-    }
-
-    $stmt->bind_param("sssss", $nome, $turma, $descricao, $dia, $hora);
-
-    if ($stmt->execute()) {
         echo "<script>
-                alert('Agendamento realizado com sucesso!');
-                window.location.href = '../View/home_aluno.php';
+                alert('Erro: Todos os campos são obrigatórios!');
+                window.location.href = '../View/form_agendar_atendimento.php';
               </script>";
-    } else {
+        exit;
+    }
+
+    try {
+        $stmt = $conn->prepare("INSERT INTO atendimento (nome, turma, descricao, dia, hora) VALUES (:nome, :turma, :descricao, :dia, :hora)");
+        $stmt->bindParam(":nome", $nome);
+        $stmt->bindParam(":turma", $turma);
+        $stmt->bindParam(":descricao", $descricao);
+        $stmt->bindParam(":dia", $dia);
+        $stmt->bindParam(":hora", $hora);
+
+        if ($stmt->execute()) {
+            echo "<script>
+                    alert('Agendamento realizado com sucesso!');
+                    window.location.href = '../View/home_aluno.php';
+                  </script>";
+        } else {
+            echo "<script>
+                    alert('Erro ao agendar. Tente novamente.');
+                    window.location.href = '../View/form_agendar_atendimento.php';
+                  </script>";
+        }
+    } catch (PDOException $e) {
         echo "<script>
-                alert('Erro ao agendar: " . $stmt->error . "');
+                alert('Erro ao agendar: " . $e->getMessage() . "');
                 window.location.href = '../View/form_agendar_atendimento.php';
               </script>";
     }
-
-    $stmt->close();
 }
-
-$conn->close();
 ?>

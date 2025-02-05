@@ -1,38 +1,39 @@
 <?php
 session_start();
+
 $host = "localhost";
-$user = "root"; 
-$pass = "";  
+$user = "root";
+$pass = "";
 $db = "sistema_agendamento";
 
-// Conectar ao banco de dados
-$conn = new mysqli($host, $user, $pass, $db);
-
-if ($conn->connect_error) {
-    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
+try {
+    $conn = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erro na conexão com o banco de dados: " . $e->getMessage());
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $siape = $_POST['username'];
-    $senha = $_POST['password'];
+    $siape = trim($_POST['username'] ?? '');
+    $senha = trim($_POST['password'] ?? '');
 
-    $stmt = $conn->prepare("SELECT * FROM pedagoga WHERE siape = ? AND senha = ?");
-    $stmt->bind_param("ss", $siape, $senha);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    if (!empty($siape) && !empty($senha)) {
+        $stmt = $conn->prepare("SELECT senha FROM pedagoga WHERE siape = :siape");
+        $stmt->bindParam(":siape", $siape);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($result->num_rows > 0) {
-        $_SESSION["admin"] = $siape;
-        header("Location: ../View/home_pedagoga.php");
-        exit();
+        if ($user && $senha === $user['senha']) { 
+            $_SESSION["admin"] = $siape;
+            header("Location: ../View/home_pedagoga.php");
+            exit();
+        } else {
+            header("Location: ../View/form_login_pedagoga.php?erro=1");
+            exit();
+        }
     } else {
         header("Location: ../View/form_login_pedagoga.php?erro=1");
         exit();
     }
-    
-
-    $stmt->close();
 }
-
-$conn->close();
 ?>

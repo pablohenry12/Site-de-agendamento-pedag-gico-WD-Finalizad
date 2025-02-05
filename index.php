@@ -36,6 +36,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre_eqp_Ped">Sobre a Equipe Pedagógica</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                     <li class="nav-item"><a class="nav-link" href="#opcoes"> Login</a></li>
                     
@@ -85,7 +86,7 @@
         </div>
     </section>
 
-    <section class="page-section bg-light" id="sobre-equipe">
+    <section class="page-section bg-light" id="sobre_eqp_Ped">
     <div class="container text-center">
         <h2 class="text-center">Sobre a Equipe Pedagógica</h2>
         <p class="mb-4">Conheça as profissionais responsáveis pela orientação e acompanhamento pedagógico no IFBA campus Jacobina.</p>
@@ -93,7 +94,7 @@
         <div class="row justify-content-center">
             <!-- Primeira pedagoga -->
             <div class="col-md-4">
-                <img src="View/assets/img/foto-maria.png" class="img-fluid rounded-circle mt-4" alt="Foto Pedagoga 1" />
+                <img src="View/assets/img/foto-maria.png" class="img-fluid rounded-circle mt-4" alt="Foto Pedagoga 1" id="Pedg01" />
                 <h4 class="mt-3">Maria Clara Fortes Silva</h4>
                 <p>Formação: Licenciatura em Pedagogia</p>
                 <p>Cargo: Coordenadora Pedagógica</p>
@@ -122,8 +123,8 @@
             <p><strong>Agendamento do Aluno:</strong> Para marcar um atendimento pedagógico, clique em "Agendamento de Aluno". Em seguida, faça login (caso não tenha conta click em "Cadastre-se") com sua matrícula e senha. Escolha a data, horário e turma, e clique em "Confirmar Atendimento". Você receberá a confirmação do agendamento na tela.</p>
             <p><strong>Área Administrativa:</strong> A pedagoga pode acessar a área administrativa clicando em "Área Administrativa". Após o login, será possível visualizar todos os agendamentos feitos pelos alunos e gerenciá-los.</p>
     
-            <a href="View/login_aluno.php" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
-            <a href="View/login_Pedagoga.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
+            <a href="View/form_login_aluno.php" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
+            <a href="View/form_login_pedagoga.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
         </div>
     </section>
     <div class='justify-center'>
@@ -131,15 +132,29 @@
     </div>
     <!-- Contato -->
     <section id="contato" class="bg-light py-5">
-        <div class="container text-center">
-            <h2>Entre em Contato</h2>
-            <p><strong>Instituto Federal de Educação, Ciência e Tecnologia da Bahia - Campus Jacobina</strong></p>
-            <p><strong>Telefone:</strong> 0800 074 7400</p>
-            <p><strong>Email:</strong>  dg.jac@ifba.edu.br </p>
-            <p><strong>Localização:</strong> Avenida Centenário, nº 500 - Bairro Nazaré</p>
-        </div>
-    </section>
+    <div class="container text-center">
+        <h2>Entre em Contato</h2>
+        <p><strong>Instituto Federal de Educação, Ciência e Tecnologia da Bahia - Campus Jacobina</strong></p>
+        <p><strong>Telefone:</strong> 0800 074 7400</p>
+        <p><strong>Email:</strong> <a href="mailto:dg.jac@ifba.edu.br">dg.jac@ifba.edu.br</a></p>
+        <p><strong>Localização:</strong> Avenida Centenário, nº 500 - Bairro Nazaré</p>
+        
+        <!-- Google Maps Embed -->
+        <div class="map-responsive mt-4">
+            <iframe 
+                width="100%" 
+                height="400" 
+                frameborder="0" 
+                style="border:0; border-radius:10px;"
+                allowfullscreen 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3914.073155059518!2d-40.5393131!3d-11.1822194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76cf3e8b7a1603d%3A0x8b35ce2877c7f01f!2sIFBA%20Jacobina!5e0!3m2!1spt-BR!2sbr!4v1738778667105!5m2!1spt-BR!2sbr">
 
+            </iframe>
+        </div>
+    </div>
+</section>
     <!-- Seção Desenvolvedor -->
     <section class="py-5">
         <div class="container text-center">
