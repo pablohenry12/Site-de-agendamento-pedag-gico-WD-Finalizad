@@ -15,7 +15,7 @@
 
 <body>
     <div class="back-button">
-    <a href="../index.php" class="btn btn-secondary">Voltar</a>
+    <a href="/index.php" class="btn btn-secondary">Voltar</a>
 
     <div class="container">
         <div class="form-container">

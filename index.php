@@ -122,8 +122,8 @@
             <p><strong>Agendamento do Aluno:</strong> Para marcar um atendimento pedagógico, clique em "Agendamento de Aluno". Em seguida, faça login (caso não tenha conta click em "Cadastre-se") com sua matrícula e senha. Escolha a data, horário e turma, e clique em "Confirmar Atendimento". Você receberá a confirmação do agendamento na tela.</p>
             <p><strong>Área Administrativa:</strong> A pedagoga pode acessar a área administrativa clicando em "Área Administrativa". Após o login, será possível visualizar todos os agendamentos feitos pelos alunos e gerenciá-los.</p>
     
-            <a href="View/login_aluno.php" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
-            <a href="View/login_Pedagoga.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
+            <a href="/View/form_login_pedagoga.php" class="btn btn-primary btn-lg m-2">Agendamento de Aluno</a>
+            <a href="/View/form_login_aluno.php" class="btn btn-secondary btn-lg m-2">Área Administrativa</a>
         </div>
     </section>
     <div class='justify-center'>

@@ -13,13 +13,13 @@
 
 <body>
     <div class="back-button">
-        <a href="login_aluno.php" class="btn btn-secondary">Voltar</a>
+        <a href="/View/form_cadastrar_aluno.php" class="btn btn-secondary">Voltar</a>
     </div>
 
     <div class="container">
         <div class="form-container">
             <h3 class="text-center mb-4">Cadastro</h3>
-            <form action="../Controllers/processar_cadastro_aluno.php" method="POST">
+            <form action="../Models/aluno.php" method="POST">
 
 
                 <div class="mb-3">
@@ -45,7 +45,7 @@
                 <button type="submit" class="btn btn-success w-100">Cadastrar</button>
 
                 <div class="mt-3 text-center">
-                    <p class="small">Já possui conta? <a href="login_aluno.php" class="text-success">Faça login</a></p>
+                    <p class="small">Já possui conta? <a href="/View/form_login_aluno.php" class="text-success">Faça login</a></p>
                 </div>
             </form>
         </div>
