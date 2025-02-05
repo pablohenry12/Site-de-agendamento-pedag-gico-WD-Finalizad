@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($senha == $user['senha']) { // Comparação direta sem criptografia
                 $_SESSION['user_id'] = $user['matricula'];
                 $_SESSION['user_matricula'] = $user['matricula'];
-                header("Location: ../View/agendamento.php");
+                header("Location: ../View/form_agendar_atendimento.php");
                 exit;
             } else {
                 $erro = "Senha incorreta.";

@@ -30,12 +30,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->execute()) {
         echo "<script>
                 alert('Agendamento realizado com sucesso!');
-                window.location.href = '../View/pag_aluno.php';
+                window.location.href = '../View/home_aluno.php';
               </script>";
     } else {
         echo "<script>
                 alert('Erro ao agendar: " . $stmt->error . "');
-                window.location.href = '../View/agendamento.php';
+                window.location.href = '../View/form_agendar_atendimento.php';
               </script>";
     }
 

@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $verf->store_result();
 
     if ($verf->num_rows > 0) {
-        echo "<script>alert('Matrícula já cadastrada!'); window.location.href='cadast_aluno.php';</script>";
+        echo "<script>alert('Matrícula já cadastrada!'); window.location.href='form_cadastrar_aluno.php';</script>";
         exit;
     }
     $verf->close();
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($senha !== $confirmar_senha) {
         echo "<script>
                 alert('As senhas não coincidem!'); 
-                window.location.href = '../View/cadast_aluno.php';
+                window.location.href = '../View/form_cadastrar_aluno.php';
               </script>";
         exit;
     }
@@ -43,12 +43,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->execute()) {
         echo "<script>
                 alert('Cadastro realizado com sucesso!');
-                window.location.href = '../View/login_aluno.php';
+                window.location.href = '../View/form_login_aluno.php';
               </script>";
     } else {
         echo "<script>
                 alert('Erro ao cadastrar. Tente novamente.');
-                window.location.href = '../View/cadast_aluno.php';
+                window.location.href = '../View/form_cadastrar_aluno.php';
               </script>";
     }
     

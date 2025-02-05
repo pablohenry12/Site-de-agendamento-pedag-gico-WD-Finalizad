@@ -23,10 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $_SESSION["admin"] = $siape;
-        header("Location: ../View/admin.php");
+        header("Location: ../View/home_pedagoga.php");
         exit();
     } else {
-        header("Location: ../View/login_pedagoga.php?erro=1");
+        header("Location: ../View/form_login_pedagoga.php?erro=1");
         exit();
     }
     

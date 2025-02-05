@@ -13,7 +13,7 @@
 <body>
 
 <div class="back-button">
-    <a href="../index_prj.php" class="btn btn-secondary">Voltar</a>
+    <a href="../index.php" class="btn btn-secondary">Voltar</a>
 </div>
 
 <div class="container">
@@ -24,7 +24,7 @@
             <div class="alert alert-danger text-center"><?php echo htmlspecialchars($_GET['erro']); ?></div>
         <?php } ?>
 
-        <form method="POST" action="../Models/validar_login_aluno.php">
+        <form method="POST" action="../Controllers/login_aluno.php">
             <div class="mb-3">
                 <label for="matricula" class="form-label">Matrícula</label>
                 <input type="number" class="form-control" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>
@@ -37,7 +37,7 @@
         </form>
 
         <div class="mt-3 text-center">
-            <p class="small">Não possui conta? <a href="../View/cadast_aluno.php">Cadastre-se</a></p>
+            <p class="small">Não possui conta? <a href="../View/form_cadastrar_aluno.php">Cadastre-se</a></p>
         </div>
     </div>
 </div>
