@@ -19,7 +19,7 @@
     <div class="container">
         <h1 class="text-center mb-4">Área Administrativa</h1>
         <div class="mb-4 text-end">
-            <a href="form_login_pedagoga.php" class="btn btn-secondary">Sair</a>
+            <a href="/View/form_login_pedagoga.php" class="btn btn-secondary">Sair</a>
         </div>
 
         <h3>Agendamentos Disponíveis</h3>
