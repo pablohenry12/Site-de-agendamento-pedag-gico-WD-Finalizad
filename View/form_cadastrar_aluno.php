@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Agendamento Pedagógico</title>
-    <link rel="icon" type="image/x-icon" href="../assets/faviconIFBA.png">
+    <link rel="icon" type="image/x-icon" href="../View/assets/Favicon Logo IFBA.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,7 +13,7 @@
 
 <body>
     <div class="back-button">
-        <a href="/View/form_cadastrar_aluno.php" class="btn btn-secondary">Voltar</a>
+        <a href="form_login_aluno.php" class="btn btn-secondary">Voltar</a>
     </div>
 
     <div class="container">
@@ -45,7 +45,7 @@
                 <button type="submit" class="btn btn-success w-100">Cadastrar</button>
 
                 <div class="mt-3 text-center">
-                    <p class="small">Já possui conta? <a href="/View/form_login_aluno.php" class="text-success">Faça login</a></p>
+                    <p class="small">Já possui conta? <a href="form_login_aluno.php" class="text-success">Faça login</a></p>
                 </div>
             </form>
         </div>

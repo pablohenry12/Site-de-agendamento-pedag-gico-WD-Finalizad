@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Agendamento Pedagógico</title>
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../View/assets/Favicon Logo IFBA.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,7 +13,7 @@
 <body>
 
 <div class="back-button">
-    <a href="/index.php" class="btn btn-secondary">Voltar</a>
+    <a href="../index.php" class="btn btn-secondary">Voltar</a>
 </div>
 
 <div class="container">
@@ -24,7 +24,7 @@
             <div class="alert alert-danger text-center"><?php echo htmlspecialchars($_GET['erro']); ?></div>
         <?php } ?>
 
-        <form method="POST" action="/Controllers/login_aluno.php">
+        <form method="POST" action="../Controllers/login_aluno.php">
             <div class="mb-3">
                 <label for="matricula" class="form-label">Matrícula</label>
                 <input type="number" class="form-control" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>

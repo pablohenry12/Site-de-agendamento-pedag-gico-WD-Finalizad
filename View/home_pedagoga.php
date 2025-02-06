@@ -7,6 +7,7 @@
     <meta name="description" content="Área Administrativa da Pedagoga">
     <meta name="author" content="Pablo Henrique">
     <title>Área Administrativa</title>
+    <link rel="icon" type="image/x-icon" href="../View/assets/Favicon Logo IFBA.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/faviconIFBA.png" />
@@ -19,7 +20,7 @@
     <div class="container">
         <h1 class="text-center mb-4">Área Administrativa</h1>
         <div class="mb-4 text-end">
-            <a href="/View/form_login_pedagoga.php" class="btn btn-secondary">Sair</a>
+            <a href="form_login_pedagoga.php" class="btn btn-secondary">Sair</a>
         </div>
 
         <h3>Agendamentos Disponíveis</h3>

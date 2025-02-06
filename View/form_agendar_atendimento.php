@@ -16,12 +16,7 @@
     <div class="form-container">
         <h2 class="text-center mb-4">Agendamento de Atendimento</h2>
 
-<<<<<<< HEAD
-        <form action="../Controllers/processar_agendamento.php" method="POST">
-=======
-        <!-- FORMULÁRIO CONECTADO AO PHP -->
-        <form action="/Models/atendimento.php" method="POST">
->>>>>>> 5adc2059c31d3f9f6427b7e9fcfac2995ee28340
+        <form action="../Models/atendimento.php" method="POST">
             <div class="mb-4 text-end">
                 <a href="form_login_aluno.php" class="btn btn-secondary">Sair</a>
             </div>
@@ -71,11 +66,7 @@
         </form>
         
         <button class="btn btn-success w-100 mt-2">
-<<<<<<< HEAD
             <a href="home_aluno.php" style="text-decoration: none; color: white;">Ver meus agendamentos</a>
-=======
-            <a href="/View/home_aluno.php" style="text-decoration: none; color: white;">Ver meus agendamentos</a>
->>>>>>> 5adc2059c31d3f9f6427b7e9fcfac2995ee28340
         </button>
     </div>
 
