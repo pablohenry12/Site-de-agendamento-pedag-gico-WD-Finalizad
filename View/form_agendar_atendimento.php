@@ -27,11 +27,6 @@
             </div>
 
             <div class="mb-3">
-                <label for="turma" class="form-label">Número da Turma</label>
-                <input type="text" class="form-control" id="turma" name="turma" placeholder="Número da sua turma" required>
-            </div>
-
-            <div class="mb-3">
                 <label for="dia" class="form-label">Dia do Atendimento</label>
                 <select class="form-select" id="dia" name="dia" required>
                     <option value="">Selecione um dia</option>

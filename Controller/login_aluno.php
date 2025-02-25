@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $matricula = trim($_POST['matricula'] ?? '');
     $senha = trim($_POST['password'] ?? '');
 
+   
     if (!empty($matricula) && !empty($senha)) {
         try {
             $stmt = $conn->prepare("SELECT matricula, senha FROM aluno WHERE matricula = :matricula");

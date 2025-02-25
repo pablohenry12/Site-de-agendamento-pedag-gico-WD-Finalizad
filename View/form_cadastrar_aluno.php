@@ -35,6 +35,10 @@
                     <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
                 </div>
                 <div class="mb-3">
+                    <label for="turma" class="form-label">Turma</label>
+                    <input class="form-control" id="turma" name="turma" placeholder="Digite sua turma" required>
+                </div>
+                <div class="mb-3">
                     <label for="senha" class="form-label">Senha</label>
                     <input type="password" class="form-control" id="senha" name="senha" placeholder="Crie uma senha" required>
                 </div>
